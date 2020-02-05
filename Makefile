@@ -17,7 +17,6 @@ OBJS=$(addprefix $(DIR_BUILD)/,$(addsuffix .rel,$(basename $(SRCS))))
 
 all: $(TARGET)
 
-# TODO: main must be first
 $(TARGET): $(OBJ_MAIN) $(OBJS)
 	@mkdir -p $(dir $@)
 	@echo "link and compile binary"
